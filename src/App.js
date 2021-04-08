@@ -6,22 +6,25 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
     <Router>
+      {/* Header here... */}
+      <Header />
       <Switch>
         <Route path="/home">
-          <Home></Home>
+          <Home />
         </Route>
-        <Route path="/details/:cioc">
-          <Details></Details>
+        <Route path="/details/:names">
+          <Details />
         </Route>
         <Route path="/">
-          <Home></Home>
+          <Home />
         </Route>
         <Route path="*">
-          <Home></Home>
+          <Home />
         </Route>
       </Switch>
     </Router>

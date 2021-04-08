@@ -3,20 +3,30 @@ import { useParams } from 'react-router';
 import './Details.css';
 
 const Details = () => {
-    const { cioc } = useParams()
+    // Dynamiq path here...
+    const { names } = useParams()
+    // Data stored here...
     const [details, setDetails] = useState([]);
-    const { name, capital, flag, area, population, region, timezone } = details;
+    // Destructure here...
+    const { name, capital, flag, area, population, region } = details;
+
+    // Data loaded dynamiqly by name here..
     useEffect(() => {
-        fetch(`https://restcountries.eu/rest/v2/name/${cioc}`)
+        fetch(`https://restcountries.eu/rest/v2/name/${names}`)
             .then(res => res.json())
             .then(data => setDetails(data[0]))
         console.log(details);
     }, [])
+
     return (
+        // UI here...
         <div className="Total d-flex justify-content-center pt-5 pb-5">
             <div className="Country mt-5 mb-5">
+                {/* Flag here... */}
                 <img className="Flag" src={flag} alt="" />
+                {/* Name */}
                 <h1>{name} </h1>
+                {/* Capital and area */}
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-6"><h4>Capital: {capital} </h4> </div>
@@ -25,6 +35,7 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
+                {/* Population and region */}
                 <div className="container mt-1 mb-5">
                     <div className="row">
                         <div className="col-md-6"><h6>Population:- {population} </h6> </div>
