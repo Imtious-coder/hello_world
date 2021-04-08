@@ -16,3 +16,25 @@
     border: 1px solid white;
     border-radius: 5px;
 }
+
+.DetailsButton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 70px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    background-color: green;
+}
+.DetailsButton:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+}
+.DetailsButton:active{
+    color: red;
+    background-color:yellow;
+}
