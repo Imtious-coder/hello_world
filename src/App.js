@@ -18,11 +18,14 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
+        <Route path="/">
+          <Home />
+        </Route>
         <Route path="/details/:names">
           <Details />
         </Route>
         <Route path="*">
-          <Error></Error>
+          <Error />
         </Route>
       </Switch>
     </Router>

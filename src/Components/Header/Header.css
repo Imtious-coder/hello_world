@@ -1,10 +1,11 @@
 #Header{
     text-align: center;
     padding: 10px;
+    font-family: 'Redressed', cursive;
     margin: 0;
     color: white;
     border-top:1px solid green ;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.466);
 }
 #Header:hover{
     color: wheat;
