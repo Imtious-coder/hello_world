@@ -1,11 +1,11 @@
 .Card{
- background-color: rgba(0, 110, 255, 0.137);
+ background-color: rgba(151, 150, 150, 0.26);
  color: white;
  border-radius: 5px;
  text-align: center;
   margin-left: 10px;
   opacity: 2;
- box-shadow: -5px -5px 20px rgb(44, 44, 44);
+ /* box-shadow: -5px -5px 20px rgb(44, 44, 44); */
 }
 .Flags{
     width: 90%;
