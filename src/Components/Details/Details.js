@@ -10,7 +10,7 @@ const Details = () => {
     // Destructure here...
     const { name, capital, flag, area, population, region } = details;
 
-    // Data loaded dynamiqly by name here..
+    // Data loaded dynamicly by name here..
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${names}`)
             .then(res => res.json())

@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
 import Header from './Components/Header/Header';
+import Error from './Components/Error/Error';
 
 function App() {
   return (
@@ -20,11 +21,8 @@ function App() {
         <Route path="/details/:names">
           <Details />
         </Route>
-        <Route path="/">
-          <Home />
-        </Route>
         <Route path="*">
-          <Home />
+          <Error></Error>
         </Route>
       </Switch>
     </Router>

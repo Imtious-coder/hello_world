@@ -8,11 +8,14 @@ const Country = (props) => {
     return (
         // UI here...
         <div className="col-md-3 mt-5 mb-5 Card">
+
             {/* Flag here.. */}
             <img className="Flags" src={flag} alt="" />
+
             {/* Name and capital here... */}
             <h3>{name} </h3>
             <p>Capital: {capital} </p>
+
             {/* Details button here.. */}
             <Link to={'/details/' + name}><button className="DetailsButton">Details</button></Link>
         </div>
