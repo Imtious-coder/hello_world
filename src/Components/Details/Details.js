@@ -15,7 +15,6 @@ const Details = () => {
         fetch(`https://restcountries.eu/rest/v2/name/${names}`)
             .then(res => res.json())
             .then(data => setDetails(data[0]))
-        console.log(details);
     }, [])
 
     return (
