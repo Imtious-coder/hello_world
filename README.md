@@ -1,8 +1,14 @@
-# Project Name: hello_world
+# hello_world
 
-## live site link (https://hello-world-dd303.web.app/)
+#### Preview(https://hello-world-dd303.web.app/)
 
+## Front End Development
+* A country infomation finder.
+* Find any country.
+* View details.
+* Update information.
 
-### This site has every country data (Name,area,national_flag,populationa and region)
+#### Tech and Tools: JavaScript, React, HTML5, CSS3, Bootstrap5, React Router, Fontawesome, Git, Github
 
-#### Language Used (HTML5, CSS3 and JavaScript) Framework Used (Bootstrap5, React.js, React-Router)
+###### Imtious Islam
+

@@ -12,18 +12,29 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setCountries(data))
     }, [])
+    const lol2 = document.getElementById("lol");
+    lol2.addEventListener(onclick, function () {
+        const lol3 = document.getElementById("Home");
+        lol3.style.display = "none";
+    })
 
     return (
         // UI here...
-        <section id="Home">
-            <div className="container">
-                <div className="row d-flex justify-content-between pt-5">
-                    {
-                        countries.map(countries => <Country country={countries}></Country>)
-                    }
+        <div>
+            <section>
+                <button id="lol">Click here...</button>
+            </section>
+            <section id="Home">
+                <div className="container">
+                    <div className="row d-flex justify-content-between pt-5">
+                        {
+                            countries.map(countries => <Country country={countries}></Country>)
+                        }
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
     );
 };
 
