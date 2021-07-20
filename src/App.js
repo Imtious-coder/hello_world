@@ -12,7 +12,6 @@ import Error from './Components/Error/Error';
 function App() {
   return (
     <Router>
-      {/* Header here... */}
       <Header />
       <Switch>
         <Route path="/home">

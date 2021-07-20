@@ -3,21 +3,18 @@ import { Link } from 'react-router-dom';
 import './Country.css'
 
 const Country = (props) => {
-    // Destructured here...
     const { name, capital, flag } = props.country;
     return (
-        // UI here...
-        <div className="col-md-3 mt-5 mb-5 Card">
-
-            {/* Flag here.. */}
-            <img className="Flags" src={flag} alt="" />
-
-            {/* Name and capital here... */}
-            <h3>{name} </h3>
-            <p>Capital: {capital} </p>
-
-            {/* Details button here.. */}
-            <Link to={'/details/' + name}><button className="DetailsButton">Details</button></Link>
+        <div className="col-6 col-md-3 mt-2 mb-2">
+            <div className="Card">
+                {/* Flag */}
+                <img className="Flags" src={flag} alt="" />
+                {/* Name and capital */}
+                <p className="Name">{name} </p>
+                <p className="Capital">Capital: {capital} </p>
+                {/* Details button */}
+                <Link to={'/details/' + name}><button className="DetailButtons">Details</button></Link>
+            </div>
         </div>
     );
 };
