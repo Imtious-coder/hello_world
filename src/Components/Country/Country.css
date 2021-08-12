@@ -1,16 +1,17 @@
-.Card{
+.Card {
     width: 100%;
     height: 300px;
     color: white;
     border-radius: 3px;
     text-align: center;
-    background-image: linear-gradient(to right, rgb(24, 24, 24), black, rgb(28, 0, 128), rgba(52, 52, 255, 0.705));
+    background-image: linear-gradient(to right, rgb(59, 59, 59), rgba(72, 72, 255, 0.705));
 }
-.Card:hover{
+
+.Card:hover {
     background-image: linear-gradient(to right, rgba(52, 52, 255, 0.705), rgb(28, 0, 128), black, rgb(24, 24, 24));
 }
 
-.Flags{
+.Flags {
     width: 80%;
     margin: 5%;
     margin-top: 10%;
@@ -19,7 +20,7 @@
     border-radius: 3px;
 }
 
-.Name{
+.Name {
     margin-top: 20px;
     line-height: 20px;
     font-size: 24px;
@@ -27,13 +28,13 @@
     font-weight: bold;
 }
 
-.Capital{
+.Capital {
     margin-top: 5px;
     font-size: 12px;
     color: rgb(185, 185, 185);
 }
 
-.DetailButtons{
+.DetailButtons {
     margin-top: 10px;
     padding: 3px 40px 4.5px 40px;
     margin-bottom: 70px;
@@ -44,7 +45,7 @@
     background-image: linear-gradient(to bottom, black, rgb(0, 0, 94));
 }
 
-.DetailButtons:hover{
+.DetailButtons:hover {
     background-image: linear-gradient(to bottom, rgb(0, 0, 94), black);
     opacity: 2;
 }
